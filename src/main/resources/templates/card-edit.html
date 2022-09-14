@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <title> th:text="${title}"</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+
+<div class="container mt-5 mb-5">
+    <h1>Редактирование карточки товара</h1>
+    <div th:each="el : ${product}" >
+        <form  method="post">
+        <input type="text" th:value="${el.title}" name="title" placeholder="Введите название товара" class="form-control"><br>
+        <textarea name="full_text"  placeholder="Введите описание товара" class="form-control" th:text="${el.full_text}"/><br>
+        <input type="text" th:value="${el.price}" name="price" placeholder="Введите цену товара" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Обновить</button>
+        </form>
+    </div>
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+
+</body>
+</html>
