@@ -54,7 +54,7 @@ public class CardController {
         product.ifPresent(res ::add);
         model.addAttribute("product", res);
         return "card-edit";
-    }
+    }       //    Авторские права принадлежат Киселевой Марии Александровне  GitHub marika7813
     @PostMapping("/card/{id}/edit")
     public String cardProductUpdate (@PathVariable(value = "id") long id, @RequestParam String title, @RequestParam String full_text, @RequestParam Integer price, Model model) {
 

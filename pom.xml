@@ -62,7 +62,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	    <!--	Авторские права принадлежат Киселевой Марии Александровне  GitHub marika7813 -->
 	<build>
 		<plugins>
 			<plugin>

@@ -23,7 +23,7 @@ public class Product {
         this.price = price;
     }
 
-
+              // Авторские права принадлежат Киселевой Марии Александровне  GitHub marika7813
 
     public Long getId() {
         return id;
